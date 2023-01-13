@@ -15,6 +15,7 @@ struct BLEDevice {
     let id: String
     var services: [BLEService] = []
     
+    /// Creates a wrapper for a CBPeripheral
     init(peripheral: CBPeripheral?) {
         self.peripheral = peripheral
         self.name = peripheral?.name ?? "unknown name"
@@ -24,10 +25,5 @@ struct BLEDevice {
         for service in services {
             self.services.append(BLEService(service: service))
         }
-    }
-    
-    init(services: [BLEService]) {
-        self.init(peripheral: nil)
-        self.services = services
     }
 }

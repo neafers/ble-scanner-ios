@@ -15,6 +15,7 @@ struct BLECharacteristic {
     let id: String
     var values: [String] = []
     
+    /// Creates a wrapper for a CBCharacteristic
     init(characteristic: CBCharacteristic?) {
         self.characteristic = characteristic
         description = characteristic?.description ?? "description unknown"

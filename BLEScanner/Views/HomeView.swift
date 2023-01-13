@@ -13,6 +13,8 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView {
+            
+            // Display a navigation stack and a single button
             VStack {
                 NavigationLink(destination: DevicesView()) {
                     Text("Scan For BLE Devices")
@@ -22,6 +24,8 @@ struct HomeView: View {
             .padding()
             .navigationTitle("Home")
         }
+        
+        // Detect app lifecycle changes and react
         .onChange(of: scenePhase) { newPhase in
             if newPhase == .active {
                 bleScanner.startScanning()
@@ -31,6 +35,8 @@ struct HomeView: View {
                 bleScanner.stopScanning()
             }
         }
+        
+        // Store the scanner as an environment object so we can access it later
         .environmentObject(bleScanner)
     }
 }

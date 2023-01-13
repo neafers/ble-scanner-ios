@@ -13,6 +13,8 @@ struct ServicesView: View {
     
     var body: some View {
         VStack {
+            
+            // Display discovery state changes and finally the device name
             switch bleScanner.scanState {
             case .idle:
                 Text("Idle")
@@ -27,23 +29,15 @@ struct ServicesView: View {
             case .readingValues, .updatingValue:
                 Text(DeviceStore.shared.connectedDevice?.name ?? "")
             }
-            List {
-                ForEach(DeviceStore.shared.connectedDevice?.services ?? [], id: \.id) { service in
-                    VStack {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 8, style: .continuous)
-                                .fill(Color(.systemGray))
-                            Text(service.name)
-                                .font(.system(size: 14))
-                                .fixedSize(horizontal: false, vertical: true)
-                        }
-                        CharacteristicView(characteristics: service.characteristics)
-                    }
-                }
-            }
+            
+            // Display a list of services
+            ServiceListView()
         }
+        .navigationTitle("Services")
         .navigationBarTitleDisplayMode(.inline)
+        
         .onAppear() {
+            // Connect to the device when this view appears
             bleScanner.connect(device: device)
         }
     }

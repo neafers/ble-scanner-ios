@@ -24,6 +24,7 @@
 		CFDA102E29710E2B00B0B879 /* BLECharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA102D29710E2B00B0B879 /* BLECharacteristic.swift */; };
 		CFDA102F297126BF00B0B879 /* BLEService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA10292970CF0300B0B879 /* BLEService.swift */; };
 		CFDA1030297127DE00B0B879 /* BLECharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA102D29710E2B00B0B879 /* BLECharacteristic.swift */; };
+		CFDA10322971D52B00B0B879 /* ServiceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA10312971D52B00B0B879 /* ServiceListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		CFDA10292970CF0300B0B879 /* BLEService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEService.swift; sourceTree = "<group>"; };
 		CFDA102B2971040A00B0B879 /* CharacteristicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicView.swift; sourceTree = "<group>"; };
 		CFDA102D29710E2B00B0B879 /* BLECharacteristic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLECharacteristic.swift; sourceTree = "<group>"; };
+		CFDA10312971D52B00B0B879 /* ServiceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				CFDA0FE8296FD29400B0B879 /* HomeView.swift */,
 				CFDA10242970A04800B0B879 /* DevicesView.swift */,
 				CFDA102229709EDE00B0B879 /* ServicesView.swift */,
+				CFDA10312971D52B00B0B879 /* ServiceListView.swift */,
 				CFDA102B2971040A00B0B879 /* CharacteristicView.swift */,
 			);
 			path = Views;
@@ -311,6 +314,7 @@
 				CFDA102C2971040A00B0B879 /* CharacteristicView.swift in Sources */,
 				CFDA10252970A04800B0B879 /* DevicesView.swift in Sources */,
 				CFDA10272970AB3B00B0B879 /* BLEDevice.swift in Sources */,
+				CFDA10322971D52B00B0B879 /* ServiceListView.swift in Sources */,
 				CFDA0FE9296FD29400B0B879 /* HomeView.swift in Sources */,
 				CFDA10212970917900B0B879 /* DeviceStore.swift in Sources */,
 				CFDA102329709EDE00B0B879 /* ServicesView.swift in Sources */,

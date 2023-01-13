@@ -16,6 +16,7 @@ struct BLEService {
     let id: String
     var characteristics: [BLECharacteristic] = []
     
+    /// Creates a wrapper for a CBService
     init(service: CBService?) {
         self.service = service
         description = service?.description ?? "description unknown"

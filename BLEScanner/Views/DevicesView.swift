@@ -10,6 +10,8 @@ import SwiftUI
 struct DevicesView: View {
     var body: some View {
         List {
+            
+            // Display a list of devices
             ForEach(DeviceStore.shared.devices, id: \.id) { device in
                 NavigationLink(device.name, destination: ServicesView(device: device))
             }

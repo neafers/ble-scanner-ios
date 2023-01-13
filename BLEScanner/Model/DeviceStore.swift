@@ -31,7 +31,10 @@ class DeviceStore: ObservableObject {
         }
     }
     
+    /// Sorted list of BLE device picked up by the scanner
     @Published var devices: [BLEDevice] = []
+    
+    /// A BLE device selected by the user for connection and discovery
     @Published var connectedDevice: BLEDevice?
     
     private init() { }

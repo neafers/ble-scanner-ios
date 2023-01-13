@@ -12,6 +12,8 @@ struct CharacteristicView: View {
     
     var body: some View {
         VStack {
+            
+            // Display a list of characteristics
             ForEach(characteristics, id: \.id) { characteristic in
                 HStack {
                     VStack(alignment: .leading, spacing: 4) {
