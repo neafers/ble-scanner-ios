@@ -13,7 +13,6 @@
 		CFDA0FEE296FD29500B0B879 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFDA0FED296FD29500B0B879 /* Preview Assets.xcassets */; };
 		CFDA0FF8296FD29500B0B879 /* BLEScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA0FF7296FD29500B0B879 /* BLEScannerTests.swift */; };
 		CFDA1002296FD29500B0B879 /* BLEScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA1001296FD29500B0B879 /* BLEScannerUITests.swift */; };
-		CFDA1004296FD29500B0B879 /* BLEScannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA1003296FD29500B0B879 /* BLEScannerUITestsLaunchTests.swift */; };
 		CFDA101D29708C3100B0B879 /* BLEScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA101C29708C3100B0B879 /* BLEScanner.swift */; };
 		CFDA10212970917900B0B879 /* DeviceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA10202970917900B0B879 /* DeviceStore.swift */; };
 		CFDA102329709EDE00B0B879 /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA102229709EDE00B0B879 /* ServicesView.swift */; };
@@ -54,7 +53,6 @@
 		CFDA0FF7296FD29500B0B879 /* BLEScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEScannerTests.swift; sourceTree = "<group>"; };
 		CFDA0FFD296FD29500B0B879 /* BLEScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFDA1001296FD29500B0B879 /* BLEScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEScannerUITests.swift; sourceTree = "<group>"; };
-		CFDA1003296FD29500B0B879 /* BLEScannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEScannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CFDA101C29708C3100B0B879 /* BLEScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEScanner.swift; sourceTree = "<group>"; };
 		CFDA10202970917900B0B879 /* DeviceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStore.swift; sourceTree = "<group>"; };
 		CFDA102229709EDE00B0B879 /* ServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				CFDA1001296FD29500B0B879 /* BLEScannerUITests.swift */,
-				CFDA1003296FD29500B0B879 /* BLEScannerUITestsLaunchTests.swift */,
 			);
 			path = BLEScannerUITests;
 			sourceTree = "<group>";
@@ -339,7 +336,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFDA1002296FD29500B0B879 /* BLEScannerUITests.swift in Sources */,
-				CFDA1004296FD29500B0B879 /* BLEScannerUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
