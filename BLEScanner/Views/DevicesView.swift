@@ -16,6 +16,7 @@ struct DevicesView: View {
                 NavigationLink(device.name, destination: ServicesView(device: device))
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
         .navigationTitle("Devices")
     }
 }

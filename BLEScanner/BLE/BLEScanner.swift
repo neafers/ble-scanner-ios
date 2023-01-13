@@ -72,7 +72,7 @@ extension BLEScanner: CBCentralManagerDelegate {
     }
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-        DeviceStore.shared.bleDevices[peripheral.identifier.uuidString] = peripheral
+        DeviceStore.shared.peripherals[peripheral.identifier.uuidString] = peripheral
         peripheral.delegate = self
     }
 }

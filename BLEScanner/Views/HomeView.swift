@@ -12,16 +12,18 @@ struct HomeView: View {
     @StateObject var bleScanner = BLEScanner()
     
     var body: some View {
-        NavigationView {
-            
-            // Display a navigation stack and a single button
+        
+        // Display a navigation stack and a single button
+        NavigationStack {
             VStack {
-                NavigationLink(destination: DevicesView()) {
-                    Text("Scan For BLE Devices")
+                NavigationLink {
+                    DevicesView()
+                } label: {
+                    Label("Scan for BLE Devices", systemImage: "radio")
                         .font(.system(size: 20))
                 }
+                .offset(y: -50)
             }
-            .padding()
             .navigationTitle("Home")
         }
         
